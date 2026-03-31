@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4; /* cor de fundo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container{
+        width: 600px;
+        border: 3px solid black;
+        padding: 40px;
+        background-color: white;
+    }
+
+    .form-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group label{
+        width: 80px;
+        font-weight: bold;
+    }
+
+    .form-group input{
+        flex: 1;
+        padding: 8px;
+        border: 3px solid black;
+        outline: none;
+    }
+
+    .buttons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons a{
+        text-decoration: none;
+        border: 3px solid black;
+        padding: 15px 30px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .buttons a:hover{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="form-group">
+        <label>NOME:</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>IDADE:</label>
+        <input type="number">
+    </div>
+
+    <div class="form-group">
+        <label>RG:</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>CPF:</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email">
+    </div>
+
+    <div class="buttons">
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="limpar.html">Limpar</a>
+        <a href="alterar.html">Alterar</a>
+    </div>
+</div>
+
+</body>
+</html>
