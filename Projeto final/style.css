@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #1e293b;
+}
+ 
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+ 
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 36px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+ 
+.login-icon {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+ 
+h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+ 
+.subtitle {
+    color: #64748b;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+ 
+.campo {
+    margin-bottom: 20px;
+}
+ 
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+ 
+.campo input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+ 
+.campo input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+ 
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+ 
+button:hover {
+    background: #1d4ed8;
+}
+ 
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+ 
+#mensagem {
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+ 
+.erro {
+    color: #dc2626;
+}
+ 
+.rodape {
+    text-align: center;
+    margin-top: 26px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+ 
+@media (max-width: 480px) {
+    .login-card {
+        padding: 26px 22px;
+    }
+ 
+    h1 {
+        font-size: 22px;
+    }
+}
