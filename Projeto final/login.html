@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Administrativo</title>
+<link rel="stylesheet" href="style.css">
+<script src="login.js" defer></script>
+</head>
+<body>
+<main class="login-container">
+<section class="login-card">
+<div class="login-icon">🔐</div>
+ 
+            <h1>Acesso Administrativo</h1>
+<p class="subtitle">
+                Entre com suas credenciais para continuar.
+</p>
+ 
+            <form id="formLogin">
+<div class="campo">
+<label for="login">Usuário</label>
+<input
+                        type="text"
+                        id="login"
+                        name="login"
+                        placeholder="Digite seu usuário"
+                        maxlength="100"
+                        autocomplete="username"
+                        required
+>
+</div>
+ 
+                <div class="campo">
+<label for="senha">Senha</label>
+<input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        maxlength="72"
+                        autocomplete="current-password"
+                        required
+>
+</div>
+ 
+                <p id="mensagem" role="alert" aria-live="polite"></p>
+ 
+                <button type="submit" id="botaoEntrar">
+                    Entrar
+</button>
+</form>
+ 
+            <p class="rodape">Sistema de acesso restrito</p>
+</section>
+</main>
+</body>
+</html>
